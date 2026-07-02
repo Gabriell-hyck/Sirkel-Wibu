@@ -35,7 +35,6 @@ sirkel-wibu is a web-based manga archive that fetches data from the Jikan API, t
    ```bash
    git clone https://github.com/username/sirkel-wibu.git
    cd sirkel-wibu
-```
 
 2. Install dependencies
    ```bash
