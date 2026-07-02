@@ -27,6 +27,7 @@ sirkel-wibu is a web-based manga archive that fetches data from the Jikan API, t
 
 - Node.js (version 16 or higher)
 - npm or yarn
+```
 
 ### Installation
 
