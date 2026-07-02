@@ -27,6 +27,7 @@ sirkel-wibu is a web-based manga archive that fetches data from the Jikan API, t
 
 - Node.js (version 16 or higher)
 - npm or yarn
+```
 
 ### Installation
 
@@ -34,7 +35,6 @@ sirkel-wibu is a web-based manga archive that fetches data from the Jikan API, t
    ```bash
    git clone https://github.com/username/sirkel-wibu.git
    cd sirkel-wibu
-```
 
 2. Install dependencies
    ```bash
@@ -43,8 +43,10 @@ sirkel-wibu is a web-based manga archive that fetches data from the Jikan API, t
 3. Start the development server
    ```bash
    npm run dev
-   ```
+
+   ```bash
 4. Open your browser and navigate to http://localhost:5173
+   ```
 
 Build for Production
 
