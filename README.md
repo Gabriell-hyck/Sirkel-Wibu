@@ -43,9 +43,9 @@ sirkel-wibu is a web-based manga archive that fetches data from the Jikan API, t
 3. Start the development server
    ```bash
    npm run dev
-   ```
+   ```bash
 4. Open your browser and navigate to http://localhost:5173
-
+   ```
 Build for Production
 
 ```bash
