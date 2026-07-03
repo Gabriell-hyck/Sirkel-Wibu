@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { Nyora } from 'nyora-sdk';
+import { Nyora } from 'nyora';
 import { createMangaViewer } from '@yui540/comimi';
 import './App.css';
 
