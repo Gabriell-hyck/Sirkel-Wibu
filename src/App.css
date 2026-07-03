@@ -206,6 +206,7 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
+  cursor: pointer;
 }
 
 .manga-card:hover {
@@ -376,6 +377,100 @@ body {
   color: #8a6f5b;
 }
 
+/* ================= READER STYLES ================= */
+.reader-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem 0 1rem 0;
+  border-bottom: 1px solid #3d2c21;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.back-btn {
+  background: #6b4f3a;
+  border: none;
+  color: #f5e6d3;
+  font-weight: 600;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: 0.15s;
+  border: 1px solid #84624a;
+}
+
+.back-btn:hover {
+  background: #7d5d45;
+  transform: scale(0.97);
+}
+
+.reader-title {
+  color: #f2dac2;
+  font-weight: 600;
+  font-size: 1.1rem;
+  flex: 1;
+}
+
+.chapter-select {
+  background: #2b1d16;
+  color: #f0dfce;
+  border: 1px solid #6b4f3a;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  outline: none;
+  min-width: 150px;
+}
+
+.chapter-select:hover {
+  border-color: #c79a7a;
+}
+
+.chapter-select:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.reader-container {
+  flex: 1;
+  min-height: 80vh;
+  background: #1a1310;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.loading-pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 1rem;
+}
+
+.loading-pages p {
+  color: #8a6f5b;
+  font-size: 1rem;
+}
+
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 4px solid #3d2c21;
+  border-top: 4px solid #c79a7a;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* ================= RESPONSIVE ================= */
 @media (max-width: 600px) {
   .app { padding: 1rem; }
   .site-name { font-size: 1.8rem; }
@@ -389,4 +484,7 @@ body {
   .pagination { gap: 0.4rem; }
   .page-btn { padding: 0.4rem 0.8rem; font-size: 0.75rem; }
   .page-num { width: 30px; height: 30px; font-size: 0.75rem; }
+  .reader-controls { flex-direction: column; align-items: stretch; gap: 0.5rem; }
+  .reader-title { font-size: 0.95rem; }
+  .chapter-select { min-width: 100%; }
 }
